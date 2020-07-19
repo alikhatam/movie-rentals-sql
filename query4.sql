@@ -1,3 +1,6 @@
+/* Out of the top 10 paying customers in 2007, who paid the maximum
+difference between two consecutive months?
+*/
 WITH top10
 AS (SELECT customer_id,
           sum(amount)
@@ -17,7 +20,7 @@ JOIN top10
   ON p.customer_id=top10.customer_id
 JOIN customer c
   ON top10.customer_id=c.customer_id
-GROUP BY 1, 2 
+GROUP BY 1, 2
 WINDOW wind AS (PARTITION BY concat(c.first_name, ' ', c.last_name)
                            ORDER BY concat(c.first_name, ' ', c.last_name),
                                    date_part('month', p.payment_date))

@@ -1,3 +1,6 @@
+/* Compare the number of movies within each combination of family-friendly
+ categories based on rental duration category.
+*/
 WITH t1
 AS (SELECT
   f.title,

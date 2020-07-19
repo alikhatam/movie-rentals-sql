@@ -1,4 +1,6 @@
-/* Query 2 - query used for the second insight */
+/* How do the stores compare in their count of rental orders during
+ every month for all years?
+*/
 
 SELECT
   to_char(rental_date, 'YYYY-MM') AS rental_year_month,

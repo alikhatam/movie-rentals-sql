@@ -1,3 +1,6 @@
+/* Who are the top 5 paying customers in 2007, and what was the amount
+ of their monthly payments?
+*/
 WITH top5
 AS (SELECT customer_id,
           sum(amount)
