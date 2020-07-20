@@ -22,3 +22,6 @@ In this project, we query the PostgreSQL database to answer below questions:
 * query2.sql
 * query3.sql
 * query4.sql
+
+### ER Diagram
+![GitHub Logo](https://video.udacity-data.com/topher/2018/September/5ba95d23_dvd-rental-erd-2/dvd-rental-erd-2.png)
